@@ -12,7 +12,7 @@ const DEFAULT_FILE_NAME: &str = "dotfilers.yaml";
 
 const VERSION: &str = git_version::git_version!(
     args = ["--tags", "--always", "--abbrev=1", "--dirty=-modified"],
-    fallback = clap::crate_version!()
+    // fallback = clap::crate_version!()
 );
 
 #[derive(Debug, Clone, Copy, Eq, PartialEq, Default)]
